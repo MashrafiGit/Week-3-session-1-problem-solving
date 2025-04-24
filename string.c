@@ -3,15 +3,15 @@ int main()
 {
     int n; scanf("%d", &n);
 
-    int a[n+1];
+    char a[n+1];
 
 
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &a[i]);
+        scanf("%c", &a[i]);
     }
 
-    int x, y, z; scanf("%d %d %d", &x, &y, &z);
+    int x, y, z; scanf("%d %c %d", &x, &y, &z);
 
     // let's do inserting
     for (int i = n; i > x; i--)
@@ -32,7 +32,7 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        printf("%d ", a[i]);
+        printf("%c", a[i]);
     }
 
     return 0;
